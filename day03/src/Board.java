@@ -83,31 +83,42 @@ public class Board {
         }
 
         if (blankRow > 0) {
-            Board moveUp = new Board(tiles);
+            Board moveUp = copyBoard(tiles);
             moveUp.tiles[blankRow][blankCol] = moveUp.tiles[blankRow-1][blankCol];
             moveUp.tiles[blankRow-1][blankCol] = 0;
             boards.add(moveUp);
         }
         if (blankRow < 2) {
-            Board moveDown = new Board(tiles);
+            Board moveDown = copyBoard(tiles);
             moveDown.tiles[blankRow][blankCol] = moveDown.tiles[blankRow+1][blankCol];
             moveDown.tiles[blankRow+1][blankCol] = 0;
             boards.add(moveDown);
         }
         if (blankCol > 0) {
-            Board moveL = new Board(tiles);
+            Board moveL = copyBoard(tiles);
             moveL.tiles[blankRow][blankCol] = moveL.tiles[blankRow][blankCol-1];
             moveL.tiles[blankRow][blankCol-1] = 0;
             boards.add(moveL);
         }
-        if (blankCol < 0) {
-            Board moveR = new Board(tiles);
+        if (blankCol < 2) {
+            Board moveR = copyBoard(tiles);
             moveR.tiles[blankRow][blankCol] = moveR.tiles[blankRow][blankCol+1];
             moveR.tiles[blankRow][blankCol+1] = 0;
             boards.add(moveR);
         }
         return boards;
     }
+
+    private Board copyBoard(int[][] tiles) {
+        int[][] copy = new int[3][3];
+        for (int i = 0; i < 3; i++) {
+            for (int j = 0; j < 3; j++) {
+                copy[i][j] = tiles[i][j];
+                }
+            }
+            return new Board(copy);
+        }
+
 
     /*
      * Prints out the board state nicely for debugging purposes
