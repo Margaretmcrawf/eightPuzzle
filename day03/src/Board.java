@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 
@@ -69,8 +70,43 @@ public class Board {
      * is valid, add it to an accumulator.
      */
     public Iterable<Board> neighbors() {
-    	// TODO: Your code here
-        return null;
+        List<Board> boards = new ArrayList<>();
+        int blankRow = -1;
+        int blankCol = -1;
+        for (int i = 0; i < 3; i++) {
+            for (int j = 0; j < 3; j++) {
+                if (tiles[i][j] == 0) {
+                    blankRow = i;
+                    blankCol = j;
+                }
+            }
+        }
+
+        if (blankRow > 0) {
+            Board moveUp = new Board(tiles);
+            moveUp.tiles[blankRow][blankCol] = moveUp.tiles[blankRow-1][blankCol];
+            moveUp.tiles[blankRow-1][blankCol] = 0;
+            boards.add(moveUp);
+        }
+        if (blankRow < 2) {
+            Board moveDown = new Board(tiles);
+            moveDown.tiles[blankRow][blankCol] = moveDown.tiles[blankRow+1][blankCol];
+            moveDown.tiles[blankRow+1][blankCol] = 0;
+            boards.add(moveDown);
+        }
+        if (blankCol > 0) {
+            Board moveL = new Board(tiles);
+            moveL.tiles[blankRow][blankCol] = moveL.tiles[blankRow][blankCol-1];
+            moveL.tiles[blankRow][blankCol-1] = 0;
+            boards.add(moveL);
+        }
+        if (blankCol < 0) {
+            Board moveR = new Board(tiles);
+            moveR.tiles[blankRow][blankCol] = moveR.tiles[blankRow][blankCol+1];
+            moveR.tiles[blankRow][blankCol+1] = 0;
+            boards.add(moveR);
+        }
+        return boards;
     }
 
     /*
