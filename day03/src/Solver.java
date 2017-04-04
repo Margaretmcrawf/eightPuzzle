@@ -26,8 +26,7 @@ public class Solver {
             this.board = board;
             this.moves = moves;
             this.prev = prev;
-            // TODO: Compute cost of board state according to A*
-            cost = 0;
+            cost = board.manhattan() + moves;
         }
 
         @Override
@@ -77,6 +76,10 @@ public class Solver {
      */
     public Iterable<Board> solution() {
     	// TODO: Your code here
+        if (!isSolvable()) {
+            return null;
+        }
+
         return null;
     }
 
