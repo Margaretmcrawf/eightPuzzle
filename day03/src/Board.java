@@ -1,6 +1,8 @@
 import java.util.LinkedList;
 import java.util.List;
 
+import static java.lang.Math.abs;
+
 /**
  * Board definition for the 8 Puzzle challenge
  */
@@ -30,8 +32,19 @@ public class Board {
      * Estimated cost from the current node to the goal for A* (h(n))
      */
     public int manhattan() {
-		// TODO: Your code here
-        return 0;
+        int sum = 0;
+        for (int row = 0; row < 3; row++) {
+            for (int col = 0; col < 3; col++) {
+                int val = tiles[row][col];
+                if (val != 0) {
+                    int goalRow = val / 3;
+                    int goalCol = (val - 1) % 3;
+                    int manhattan = (abs(goalRow - row) + abs(goalCol - col));
+                    sum += manhattan;
+                }
+            }
+        }
+        return sum;
     }
 
     /*
