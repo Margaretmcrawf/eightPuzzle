@@ -38,7 +38,7 @@ public class Board {
             for (int col = 0; col < 3; col++) {
                 int val = tiles[row][col];
                 if (val != 0) {
-                    int goalRow = val / 3;
+                    int goalRow = (val-1) / 3;
                     int goalCol = (val - 1) % 3;
                     int manhattan = (abs(goalRow - row) + abs(goalCol - col));
                     sum += manhattan;
