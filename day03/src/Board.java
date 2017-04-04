@@ -45,8 +45,28 @@ public class Board {
      * Returns true if the board is solvable
      */
     public boolean solvable() {
-    	// TODO: Your code here
-        return false;
+        int inversion = 0;
+        int[] b = new int[(this.size()*this.size())-1];
+
+        int pos = 0;
+        for (int[] tile : tiles) {
+            for (int aTile : tile){
+                if(aTile != 0) {
+                    b[pos] = aTile;
+                    pos++;
+                }
+            }
+        }
+
+        for(int i=0; i<b.length-1; i++){
+            for(int x=i+1; x<b.length; x++){
+                if(b[x] < b[i]){
+                    inversion++;
+                }
+            }
+        }
+        System.out.println(inversion);
+        return inversion%2==0;
     }
 
     /*
