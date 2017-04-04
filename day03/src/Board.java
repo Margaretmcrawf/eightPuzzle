@@ -34,12 +34,12 @@ public class Board {
      */
     public int manhattan() {
         int sum = 0;
-        for (int row = 0; row < 3; row++) {
-            for (int col = 0; col < 3; col++) {
+        for (int row = 0; row < size(); row++) {
+            for (int col = 0; col < size(); col++) {
                 int val = tiles[row][col];
                 if (val != 0) {
-                    int goalRow = (val-1) / 3;
-                    int goalCol = (val - 1) % 3;
+                    int goalRow = (val-1) / size();
+                    int goalCol = (val - 1) % size();
                     int manhattan = (abs(goalRow - row) + abs(goalCol - col));
                     sum += manhattan;
                 }
