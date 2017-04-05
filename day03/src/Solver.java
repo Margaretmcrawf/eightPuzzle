@@ -51,8 +51,13 @@ public class Solver {
      * Return the root state of a given state
      */
     private State root(State state) {
-    	// TODO: Your code here
-        return null;
+    	State r = state;
+
+        while(state.prev != null){
+            r = state.prev;
+        }
+
+        return r;
     }
 
     /*
