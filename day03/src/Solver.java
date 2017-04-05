@@ -67,6 +67,7 @@ public class Solver {
      */
     public Solver(Board initial) {
     	solutionState = new State(initial, 0, null);
+    	initialState = new State(initial, 0, null);
     }
 
     /*
@@ -80,14 +81,57 @@ public class Solver {
      * Return the sequence of boards in a shortest solution, null if unsolvable
      */
     public Iterable<Board> solution() {
-    	// TODO: Your code here
         if (!isSolvable()) {
             return null;
         }
-        List<State> open = new ArrayList<>();
-        List<State> closed = new ArrayList<>();
+        Set<State> open = new HashSet<>();
+        Set<State> closed = new HashSet<>();
 
-        
+        open.add(initialState);
+
+        while (open.size() != 0) {
+            State minState = initialState;
+            int minF = Integer.MAX_VALUE;
+
+            for (State s : open) {
+                if (s.cost < minF) {
+                    minF = s.cost;
+                    minState = s;
+                }
+            }
+            open.remove(minState);
+            State q = minState;
+
+            for (Board u : q.board.neighbors()) {
+                if (u.isGoal()) {
+                    State uState = new State(u, q.moves+1, q);
+                    List<Board> path = new LinkedList<>();
+                    State current = uState;
+                    while (current != null) {
+                        path.add(0, current.board);
+                        current = current.prev;
+                    }
+                    return path;
+                }
+                State uState = new State(u, q.moves+1, q);
+
+                boolean ignored = false;
+                for (State n : open) {
+                    if ((n.equals(uState)) && (n.cost < uState.cost)) {
+                        ignored = true;
+                    }
+                } for (State n : closed) {
+                    if ((n.equals(uState)) && (n.cost < uState.cost)) {
+                        ignored = true;
+                    }
+                } if (!ignored) {
+                    open.add(uState);
+                }
+            }
+            closed.add(q);
+        }
+
+
         return null;
     }
 

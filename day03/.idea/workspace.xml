@@ -24,7 +24,7 @@
       <file leaf-file-name="Board.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Board.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="590">
+            <state relative-caret-position="1548">
               <caret line="86" column="54" lean-forward="true" selection-start-line="86" selection-start-column="54" selection-end-line="86" selection-end-column="54" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -42,13 +42,13 @@
       <file leaf-file-name="Solver.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Solver.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="414">
-              <caret line="89" column="8" lean-forward="false" selection-start-line="89" selection-start-column="8" selection-end-line="89" selection-end-column="8" />
+            <state relative-caret-position="-234">
+              <caret line="86" column="42" lean-forward="true" selection-start-line="86" selection-start-column="42" selection-end-line="86" selection-end-column="42" />
               <folding>
                 <element signature="e#1290#1291#0" expanded="true" />
                 <element signature="e#1339#1340#0" expanded="true" />
-                <element signature="e#1904#1905#0" expanded="true" />
-                <element signature="e#1957#1958#0" expanded="true" />
+                <element signature="e#1974#1975#0" expanded="true" />
+                <element signature="e#2027#2028#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -85,7 +85,7 @@
   <component name="ProjectFrameBounds">
     <option name="x" value="71" />
     <option name="y" value="52" />
-    <option name="width" value="826" />
+    <option name="width" value="1205" />
     <option name="height" value="1028" />
   </component>
   <component name="ProjectView">
@@ -437,12 +437,15 @@
     <history-entry file="PuzzleTest - 2017.04.05 at 15h 46m 29s.xml">
       <configuration name="PuzzleTest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="PuzzleTest - 2017.04.05 at 16h 18m 00s.xml">
+      <configuration name="PuzzleTest" configurationId="JUnit" />
+    </history-entry>
     <history-entry file="PuzzleTest_testManhattan - 2017.04.04 at 16h 28m 48s.xml">
       <configuration name="PuzzleTest.testManhattan" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="71" y="52" width="826" height="1028" extended-state="4" />
+    <frame x="71" y="52" width="1205" height="1028" extended-state="4" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -595,7 +598,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Board.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="590">
+        <state relative-caret-position="1548">
           <caret line="86" column="54" lean-forward="true" selection-start-line="86" selection-start-column="54" selection-end-line="86" selection-end-column="54" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -622,13 +625,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Solver.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="89" column="8" lean-forward="false" selection-start-line="89" selection-start-column="8" selection-end-line="89" selection-end-column="8" />
+        <state relative-caret-position="-234">
+          <caret line="86" column="42" lean-forward="true" selection-start-line="86" selection-start-column="42" selection-end-line="86" selection-end-column="42" />
           <folding>
             <element signature="e#1290#1291#0" expanded="true" />
             <element signature="e#1339#1340#0" expanded="true" />
-            <element signature="e#1904#1905#0" expanded="true" />
-            <element signature="e#1957#1958#0" expanded="true" />
+            <element signature="e#1974#1975#0" expanded="true" />
+            <element signature="e#2027#2028#0" expanded="true" />
           </folding>
         </state>
       </provider>
