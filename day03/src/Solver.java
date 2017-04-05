@@ -67,8 +67,7 @@ public class Solver {
      * Is the input board a solvable state
      */
     public boolean isSolvable() {
-    	// TODO: Your code here
-        return false;
+        return solutionState.board.solvable();
     }
 
     /*
