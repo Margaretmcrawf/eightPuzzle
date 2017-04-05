@@ -66,7 +66,7 @@ public class Solver {
      * and a identify the shortest path to the the goal state
      */
     public Solver(Board initial) {
-    	// TODO: Your code here
+    	solutionState = new State(initial, 0, null);
     }
 
     /*
