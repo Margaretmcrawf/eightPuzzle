@@ -9,6 +9,7 @@ public class Solver {
 
     public int minMoves = -1;
     private State solutionState;
+    private State initialState;
     private boolean solved = false;
 
     /**
@@ -83,7 +84,10 @@ public class Solver {
         if (!isSolvable()) {
             return null;
         }
+        List<State> open = new ArrayList<>();
+        List<State> closed = new ArrayList<>();
 
+        
         return null;
     }
 
