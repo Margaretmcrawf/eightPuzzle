@@ -87,7 +87,6 @@ public class Board {
                 }
             }
         }
-        System.out.println(inversion);
         return inversion%2==0;
     }
 

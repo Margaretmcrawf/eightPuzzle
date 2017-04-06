@@ -16,7 +16,7 @@ public class Solver {
      * State class to make the cost calculations simple
      * This class holds a board state and all of its attributes
      */
-    private class State implements Comparable<State>{
+    private class State implements Comparable<State> {
         // Each state needs to keep track of its cost and the previous state
         private Board board;
         private int moves;
@@ -66,21 +66,23 @@ public class Solver {
      * and a identify the shortest path to the the goal state
      */
     public Solver(Board initial) {
-    	solutionState = new State(initial, 0, null);
     	initialState = new State(initial, 0, null);
+    	solution();
     }
 
     /*
      * Is the input board a solvable state
      */
     public boolean isSolvable() {
-        return solutionState.board.solvable();
+        return initialState.board.solvable();
     }
 
     /*
      * Return the sequence of boards in a shortest solution, null if unsolvable
      */
     public Iterable<Board> solution() {
+        System.out.println("solution: ");
+
         if (!isSolvable()) {
             return null;
         }
@@ -102,38 +104,39 @@ public class Solver {
             open.remove(minState);
             State q = minState;
 
-            for (Board u : q.board.neighbors()) {
-                if (u.isGoal()) {
-                    State uState = new State(u, q.moves+1, q);
+            for (Board uBoard : q.board.neighbors()) {
+                State u = new State(uBoard, q.moves+1, q);
+
+                if (uBoard.isGoal()) {
+                    solved = true;
                     List<Board> path = new LinkedList<>();
-                    State current = uState;
+                    solutionState = u;
+                    State current = u;
+                    minMoves = u.moves;
                     while (current != null) {
                         path.add(current.board);
                         current = current.prev;
                     }
-                    for (Board b : path) {
-                        b.printBoard();
-                    }
                     return path;
                 }
-                State uState = new State(u, q.moves+1, q);
 
                 boolean ignored = false;
                 for (State n : open) {
-                    if ((n.equals(uState)) && (n.cost < uState.cost)) {
+                    if ((n.equals(u)) && (n.cost < u.cost)) {
                         ignored = true;
                     }
                 } for (State n : closed) {
-                    if ((n.equals(uState)) && (n.cost < uState.cost)) {
+                    if ((n.equals(u)) && (n.cost < u.cost)) {
                         ignored = true;
                     }
                 } if (!ignored) {
-                    open.add(uState);
+                    open.add(u);
                 }
             }
             closed.add(q);
         }
 
+        System.out.println("finished without solution");
         return null;
     }
 
@@ -152,7 +155,7 @@ public class Solver {
      * states
      */
     public static void main(String[] args) {
-        int[][] initState = {{8, 6, 7}, {2, 5, 4}, {3, 0, 1}};
+        int[][] initState = {{2, 3, 1}, {4, 5, 0}, {8, 6, 7}};
         Board initial = new Board(initState);
 
         // Solve the puzzle
