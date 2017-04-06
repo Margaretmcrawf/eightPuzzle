@@ -108,8 +108,11 @@ public class Solver {
                     List<Board> path = new LinkedList<>();
                     State current = uState;
                     while (current != null) {
-                        path.add(0, current.board);
+                        path.add(current.board);
                         current = current.prev;
+                    }
+                    for (Board b : path) {
+                        b.printBoard();
                     }
                     return path;
                 }
@@ -130,7 +133,6 @@ public class Solver {
             }
             closed.add(q);
         }
-
 
         return null;
     }

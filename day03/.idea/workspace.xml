@@ -24,16 +24,14 @@
       <file leaf-file-name="Board.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Board.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1548">
-              <caret line="86" column="54" lean-forward="true" selection-start-line="86" selection-start-column="54" selection-end-line="86" selection-end-column="54" />
+            <state relative-caret-position="324">
+              <caret line="57" column="48" lean-forward="true" selection-start-line="57" selection-start-column="48" selection-end-line="57" selection-end-column="48" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#392#393#0" expanded="true" />
                 <element signature="e#417#418#0" expanded="true" />
                 <element signature="e#580#581#0" expanded="true" />
                 <element signature="e#615#616#0" expanded="true" />
-                <element signature="e#1385#1386#0" expanded="true" />
-                <element signature="e#1419#1420#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -42,8 +40,8 @@
       <file leaf-file-name="Solver.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Solver.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-234">
-              <caret line="86" column="42" lean-forward="true" selection-start-line="86" selection-start-column="42" selection-end-line="86" selection-end-column="42" />
+            <state relative-caret-position="64">
+              <caret line="103" column="0" lean-forward="true" selection-start-line="103" selection-start-column="0" selection-end-line="103" selection-end-column="0" />
               <folding>
                 <element signature="e#1290#1291#0" expanded="true" />
                 <element signature="e#1339#1340#0" expanded="true" />
@@ -57,8 +55,8 @@
       <file leaf-file-name="PuzzleTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/PuzzleTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="214">
-              <caret line="49" column="0" lean-forward="false" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
+            <state relative-caret-position="340">
+              <caret line="68" column="50" lean-forward="true" selection-start-line="68" selection-start-column="50" selection-end-line="68" selection-end-column="50" />
               <folding>
                 <element signature="e#498#499#0" expanded="true" />
                 <element signature="e#544#545#0" expanded="true" />
@@ -85,7 +83,7 @@
   <component name="ProjectFrameBounds">
     <option name="x" value="71" />
     <option name="y" value="52" />
-    <option name="width" value="1205" />
+    <option name="width" value="1849" />
     <option name="height" value="1028" />
   </component>
   <component name="ProjectView">
@@ -409,8 +407,8 @@
     <recent_temporary>
       <list size="3">
         <item index="0" class="java.lang.String" itemvalue="JUnit.PuzzleTest" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.PuzzleTest.testManhattan" />
-        <item index="2" class="java.lang.String" itemvalue="Application.Board" />
+        <item index="1" class="java.lang.String" itemvalue="Application.Board" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.PuzzleTest.testManhattan" />
       </list>
     </recent_temporary>
   </component>
@@ -428,24 +426,39 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="PuzzleTest - 2017.04.04 at 16h 23m 38s.xml">
+    <history-entry file="PuzzleTest - 2017.04.06 at 16h 40m 06s.xml">
       <configuration name="PuzzleTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="PuzzleTest - 2017.04.04 at 16h 29m 42s.xml">
+    <history-entry file="PuzzleTest - 2017.04.06 at 16h 41m 21s.xml">
       <configuration name="PuzzleTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="PuzzleTest - 2017.04.05 at 15h 46m 29s.xml">
+    <history-entry file="PuzzleTest - 2017.04.06 at 16h 49m 20s.xml">
       <configuration name="PuzzleTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="PuzzleTest - 2017.04.05 at 16h 18m 00s.xml">
+    <history-entry file="PuzzleTest - 2017.04.06 at 16h 50m 21s.xml">
       <configuration name="PuzzleTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="PuzzleTest_testManhattan - 2017.04.04 at 16h 28m 48s.xml">
-      <configuration name="PuzzleTest.testManhattan" configurationId="JUnit" />
+    <history-entry file="PuzzleTest - 2017.04.06 at 16h 51m 21s.xml">
+      <configuration name="PuzzleTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="PuzzleTest - 2017.04.06 at 16h 51m 41s.xml">
+      <configuration name="PuzzleTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="PuzzleTest - 2017.04.06 at 16h 52m 10s.xml">
+      <configuration name="PuzzleTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="PuzzleTest - 2017.04.06 at 16h 53m 29s.xml">
+      <configuration name="PuzzleTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="PuzzleTest - 2017.04.06 at 16h 54m 23s.xml">
+      <configuration name="PuzzleTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="PuzzleTest - 2017.04.06 at 16h 54m 37s.xml">
+      <configuration name="PuzzleTest" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="71" y="52" width="1205" height="1028" extended-state="4" />
+    <frame x="71" y="52" width="1849" height="1028" extended-state="4" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -457,7 +470,7 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2659686" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3937173" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -521,7 +534,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="1" />
+      <option name="time" value="2" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -540,8 +553,6 @@
             <element signature="e#417#418#0" expanded="true" />
             <element signature="e#580#581#0" expanded="true" />
             <element signature="e#615#616#0" expanded="true" />
-            <element signature="e#1385#1386#0" expanded="true" />
-            <element signature="e#1419#1420#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -556,8 +567,6 @@
             <element signature="e#417#418#0" expanded="true" />
             <element signature="e#580#581#0" expanded="true" />
             <element signature="e#615#616#0" expanded="true" />
-            <element signature="e#1385#1386#0" expanded="true" />
-            <element signature="e#1419#1420#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -572,8 +581,6 @@
             <element signature="e#417#418#0" expanded="true" />
             <element signature="e#580#581#0" expanded="true" />
             <element signature="e#615#616#0" expanded="true" />
-            <element signature="e#1385#1386#0" expanded="true" />
-            <element signature="e#1419#1420#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -598,24 +605,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Board.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1548">
-          <caret line="86" column="54" lean-forward="true" selection-start-line="86" selection-start-column="54" selection-end-line="86" selection-end-column="54" />
+        <state relative-caret-position="324">
+          <caret line="57" column="48" lean-forward="true" selection-start-line="57" selection-start-column="48" selection-end-line="57" selection-end-column="48" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#392#393#0" expanded="true" />
             <element signature="e#417#418#0" expanded="true" />
             <element signature="e#580#581#0" expanded="true" />
             <element signature="e#615#616#0" expanded="true" />
-            <element signature="e#1385#1386#0" expanded="true" />
-            <element signature="e#1419#1420#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/PuzzleTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="214">
-          <caret line="49" column="0" lean-forward="false" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
+        <state relative-caret-position="340">
+          <caret line="68" column="50" lean-forward="true" selection-start-line="68" selection-start-column="50" selection-end-line="68" selection-end-column="50" />
           <folding>
             <element signature="e#498#499#0" expanded="true" />
             <element signature="e#544#545#0" expanded="true" />
@@ -625,8 +630,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Solver.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-234">
-          <caret line="86" column="42" lean-forward="true" selection-start-line="86" selection-start-column="42" selection-end-line="86" selection-end-column="42" />
+        <state relative-caret-position="64">
+          <caret line="103" column="0" lean-forward="true" selection-start-line="103" selection-start-column="0" selection-end-line="103" selection-end-column="0" />
           <folding>
             <element signature="e#1290#1291#0" expanded="true" />
             <element signature="e#1339#1340#0" expanded="true" />

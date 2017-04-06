@@ -52,7 +52,15 @@ public class Board {
      * Compare the current state to the goal state
      */
     public boolean isGoal() {
-        return tiles==goal;
+
+        for (int i = 0; i < 3; i++) {
+            for (int j = 0; j < 3; j++) {
+                if (tiles[i][j] != goal[i][j]) {
+                    return false;
+                }
+            }
+        }
+        return true;
     }
 
     /*
@@ -178,7 +186,7 @@ public class Board {
 
     public static void main(String[] args) {
         // DEBUG - Your solution can include whatever output you find useful
-        int[][] initState = {{1, 2, 3}, {4, 0, 6}, {7, 8, 5}};
+        int[][] initState = {{1, 2, 3}, {4, 5, 6}, {7, 0, 8}};
         Board board = new Board(initState);
 
         board.printBoard();
